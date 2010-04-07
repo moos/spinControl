@@ -1,6 +1,6 @@
 # spinControl
 
-spinControl is a stand-alone spin control optimized for touch-enabled Webkit-based browsers, such as on the iPad, iPhone, and iPod touch.
+spinControl is a stand-alone spin control optimized for touch-enabled Webkit-based browsers, such as on the iPad, iPhone, and iPod touch.  Whereas in the [sliderControl](http://github.com/moos/sliderControl), the thumb widget is moved across a fixed set of values to select the desired input, in the spinControl the whole set is movable.  This allows for larger set of data that can fit on the visible screen.
 
 [Demo](http://42at.com/lab/spinControl) (best viewed on desktop Safari/Chrome or iPhone/iPod Touch).
 
@@ -20,7 +20,7 @@ Although the demo uses [jQTouch](http://www.jqtouch.com/) & [jQuery](http://jque
 
 ## Releases
 
-v0.1 – February 5, 2010
+v0.1 - February 5, 2010
 
     * initial release
 
@@ -145,12 +145,12 @@ A special case of the spinControl is the toggle switch that behaves similar to i
 
 Usage:
 
-spin4 = new spinToggle('#spin4', ['ON','OFF'], {
-                // onOffStyle: true,
-                onchange: function(){
-                   alert('selected state is ' +  this.value);
-                },
-             });
+	spin4 = new spinToggle('#spin4', ['ON','OFF'], {
+					// onOffStyle: true,
+					onchange: function(){
+					   alert('selected state is ' +  this.value);
+					},
+				 });
 
 The onOffStyle flag (if provided), styles the control similar to iPhone's on/off toggle switch.  The second argument should be an array indicating the text for the two states of the switch.  The width of the control is adjusted accordingly.
 
