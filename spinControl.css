@@ -1,0 +1,126 @@
+/*
+* spinControl.css
+*
+* Copyright (c) 2010 
+* http://42at.com/lab/spinControl
+* Released under MIT license
+* 
+* Version 0.1 - Last updated: 2010.02.5
+*/
+.spinToggle,
+.spin {
+	height:34px;
+	border:0px inset rgba(256,256,256,.2);
+	margin:0 10%;
+	padding:0;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4e4e6e), to(#222));
+	overflow:hidden;
+    -webkit-border-radius: 10px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	
+  	-webkit-box-sizing: border-box;	
+}
+.spinThumb {
+	margin:0;
+	padding:2px;
+	opacity:.7;
+	text-shadow: rgba(128,128,128,1) 2px 2px 4px;
+	text-align:center;
+	z-index:5;
+	-webkit-box-sizing: border-box;	
+    -webkit-border-radius: 12px;
+}
+.spinDisabled {
+	opacity:.5;
+}	
+.spinLabelsDiv {
+	z-index:3;
+	margin:0;
+	padding:0;
+	border-width:0;
+	table-layout:fixed;
+}
+.spinLabel {
+	display: table-cell; /* important */
+	width: auto; /* width seems to have no affect with display:table-cell */
+	height:30px; /* adjust for font-size and thumb padding */
+	margin:0;
+	padding: 0 1.2em;
+	border-width:0;
+	border-right:1px solid rgba(255,255,255,.2);
+	border-left:1px solid rgba(255,255,255,.2);
+	text-shadow: rgba(0,0,0,.3) 3px 3px 2px;
+	text-align:center;
+  	white-space: nowrap;
+	z-index:4;
+	vertical-align:middle;
+	-webkit-border-radius: 10px;
+	-webkit-box-sizing: border-box;	
+}
+.spinLabel:last-child {
+	--border-width:0;
+}
+.spinLabel.selected {
+	color: rgba(0,0,0,1);
+	background-color: rgba(255,255,255,1);
+	-webkit-transition: color  150ms ease-out 0ms;
+}
+
+/*
+spin toggle -- mimics iPhones on/off switch behavior
+*/
+.spinToggle {
+	width:auto; /* auto adjusts to labels */
+	height:30px;
+    -webkit-border-radius: 4px;
+}
+.spinToggle .spinThumb {
+	color:white;
+	font-weight:bold;
+	opacity:.8;
+    -webkit-border-radius: 4px;
+	}
+.spinToggle .spinLabel {
+	font-size:16px;
+	font-weight:bold;
+	text-shadow:none;
+	color: #fff;
+	margin:0; 	
+	padding:0 1em;
+	border:0;
+	height:26px;
+    -webkit-border-radius: 4px;
+}
+.spinToggle .spinLabel.thimbleClass{
+	border:0;
+	background-color: rgba(255,255,255,.8);
+	min-width:1.6em;
+	}
+
+/*
+apply iPhone's on/off style to a .spinToggle
+*/
+.onOffStyle {
+	background:transparent; 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#888), to(#eee));
+}
+.onOffStyle .spinThumb {
+	padding:0px;
+	}
+.onOffStyle  .spinLabel.thimbleClass{
+	-webkit-box-shadow:0px 0px 6px #000;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#777), to(#bbb));
+}
+.onOffStyle  .spinLabel:first-child {
+	height:30px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#558), to(#194fdb ));
+	-webkit-border-bottom-right-radius:0;
+	-webkit-border-top-right-radius:0;
+	}
+.onOffStyle .spinLabel:last-child {
+	color:#444; 
+	background: transparent;
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-top-left-radius: -8px;
+	}
+
+	
