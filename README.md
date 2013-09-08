@@ -20,9 +20,11 @@ Although the demo uses [jQTouch](http://www.jqtouch.com/) & [jQuery](http://jque
 
 ## Releases
 
-v0.1 - February 5, 2010
+v0.2 - August 1, 2013
+ * fixed touch vs. mouse events
 
-    * initial release
+v0.1 - February 5, 2010
+ * initial release
 
 
 ## Usage:
